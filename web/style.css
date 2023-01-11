@@ -1,0 +1,51 @@
+body {
+ background-color: #5e98ef;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h1 {
+  font-size: 40px
+}
+
+
+h2 {
+  font-size: 20px
+}
+
+ul {
+  
+  font-size: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+
+li a {
+  color: black;
+  display: block;
+  width: 60px;
+}
+
+li a:hover {
+  color: white;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Add a blue text color to links */
+a {
+  color: purple;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */

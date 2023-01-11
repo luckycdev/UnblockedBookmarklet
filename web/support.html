@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+
+<center><h1>Unblocked Bookmarklet</h1></center>
+<title>Google Classroom</title>
+  <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png">
+<center><h2>Support Discord:<a href="https://discord.gg/nAEtSVbcKx"> discord.gg/nAEtSVbcKx</a></h2></center>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+</style>
+</body>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+
+
+
+    <button onclick="sendMessage()">Send</button>
+    <input type="text" placeholder="Enter discord @ if you want" name="discord">
+  <script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/942992471464501279/XyiqFmMUYgfQtdr9fhjjqjRDxqvS4QNID-Fz1bwRNNUKcq7jIxEO-9fjC3_4cd4I4a7G");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "Unblocked Webhook",
+        avatar_url: "https://bookmarklet.luckycdev.repl.co/unblockedlogo.png",
+        content: "The message to send"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
