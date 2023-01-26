@@ -1,0 +1,21 @@
+<html>
+    <head>
+    </head>
+    <body>
+     <center><textarea name="" id="codebox" style="width:1250px;height:593px;color:white;background-color:#2e3233;margin:auto">hi</textarea>
+     <br>
+         <button onclick="runhtml()">Run</button></center>
+<script>
+
+function runhtml() {
+    var myWindow1 = window.open('', 'Your Code', 'scrollbars=1,height='+screen.availHeight+',width='+screen.availWidth);
+   var codebox = document.getElementById("codebox")
+    myWindow1.document.write(codebox.value);
+}
+</script>
+<br>
+<p>Made by <a href="https://github.com/Awire9966/HtmlExecute" target="_blank">Awire9966</a></p>
+    </body>
+</html>
+<script src="script.js"></script>
+<link rel="stylesheet" href="games.css">
