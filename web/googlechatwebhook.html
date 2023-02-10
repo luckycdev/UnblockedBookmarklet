@@ -1,0 +1,29 @@
+<textarea id="text" placeholder="put text to be sent here" style="width:400px;height:200px;"></textarea>
+<textarea id="webhookurl" placeholder="webhook url" style="width:400px;height:200px;"></textarea>
+<button onclick=chatwebhook()>Send</button>
+
+<script>
+function chatwebhook() {
+  const webhookURL = document.getElementById("webhookurl").value;
+  const textinput=document.getElementById("text").value;
+  const data = JSON.stringify({
+    'text': textinput,
+  });
+  let resp;
+  fetch(webhookURL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
+    body: data,
+  }).then((response) => {
+    resp = response;
+    console.log(response);
+  });
+  return resp;
+}
+</script>
+<a href="index.html">Home</a>
+</body>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
