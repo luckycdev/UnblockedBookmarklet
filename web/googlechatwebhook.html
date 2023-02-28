@@ -23,7 +23,19 @@ function chatwebhook() {
   return resp;
 }
 </script>
+<br>
 <a href="index.html">Home</a>
+<br>
+
+<textarea id="tabrenametextinput" placeholder="New Tab Name" style="width:100px;height:40px;"></textarea>
+<button onclick=renametab()>Rename Tab</button>
+<script>
+function renametab() {
+  const tabrenametext = document.getElementById("tabrenametextinput").value;
+document.title = tabrenametext;
+}
+</script>
+
 </body>
 <script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
